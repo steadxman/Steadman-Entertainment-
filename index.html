@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Meta Info and Page setup-->
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steadman Entertainment</title>
+
+    <!--Link to External CSS-->
+    <link rel="stylesheet" href="SE_style.CSS">
+
+    <!--Internal CSS Styles-->
+    <style>
+        /* Reset to default margin/padding and set background color */
+        html, body {
+            margin:0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: black;
+        }
+
+        /* Video Banner Container */
+        .video-container {
+            position: relative;         /* Needed for absolutely-positioned text */
+            width: 100%;                /* Full screen width */
+            height: 150px;              /* Height for banner */
+            border: 4px solid red;    /* Red Boarder around the banner */
+            box-sizing: border-box;     /* Includes border in total size */
+            overflow: hidden;           /* Hide overflow content */
+        }
+    
+        /* Video Styling */
+        .webBanner-video {
+            width: 100%;                /* Stretch video across full width */
+            height: 100%;               /* Match the container height */
+            object-fit: cover;          /* Cover the entire container */
+            display: block;             /* Removes default spacing */
+         }
+
+    
+    </style>
+</head>
+ <body>
+
+    <!-- Video Header with Text Overlay -->
+<div class="video-container">
+   <video class="webBanner-video" autoplay muted loop playsinline>
+    <source src="Videos/SE_Website_Banner.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+   </video>
+
+
+
+   <!-- Heading Text Overlaid on  video-->
+   <div class="video-text">
+     <h1> Welcome to Steadman Entertainment!</h1>
+     <h2> A New Generation Awaits</h2>
+    </div>
+ </div>
+
+    
+
+ <!--Homepage images part of slideshow-->
+      <div class="slider">
+        <div class="slides">
+        <img class="slideshow-image" src="Homepage_Photos/RW Pic 1 .png" alt="Slide 1">
+        <img class="slideshow-image" src="Homepage_Photos/RW Pic 2 .png" alt="Slide 2">
+        <img class="slideshow-image" src="Homepage_Photos/APSU Pic 1.png" alt="Slide 3">
+        <img class="slideshow-image" src="Homepage_Photos/Book Face Cover  Pic.png" alt="Slide 4">
+        <img class="slideshow-image" src="Homepage_Photos/Memphis Pic.png" alt="Slide 5">
+        <img class="slideshow-image" src="Homepage_Photos/SK Promo Art .png" alt="Slide 6">
+        <img class="slideshow-image" src="Homepage_Photos/HF Promo Art .png" alt= "Slide 7">
+        <img class="slideshow-image" src="Homepage_Photos/Rage Promo Art .png" alt="Slide 8">
+      </div>
+      <button class="prev" onclick="prevSlide()"> &#10094</button>
+     <button class="next" onclick="nextSlide()"> &#10095</button>
+   </div>
+
+
+    <div class="top-left-text">
+     <h2>WELCOME TO A NEW GENERATION OF STORIES!</h2>
+     <h3>Steadman Entertainment is changing the way stories are told!
+        Stories that are real, entertaining, creative, and original! 
+        Stories that you can't put down! Stories for a new gerneration!
+     </h3>
+    </div>
+
+
+    <div class="RECO-HP-Vid">
+    <video class="side-video" autoplay muted loop playsinline>
+    <source src="Videos/RECO Homepage Vid.mp4" type="video/mp4">
+    </video>
+   </div>
+
+  
+
+<!--Steadman Entertainment Logo-->
+<a href="file:///C:/Users/chris/OneDrive/Documents/Code/index.html">
+    <img  class="img-SELogo" src="img/SE Logo.png" alt="Steadman Entertainment logo">
+</a>
+
+ 
+<!--Super Kidz Homepage Art-->   
+
+<div class="img-row">
+<a href="https://www.amazon.com/Super-Kidz-1-Chris-Steadman-ebook/dp/B0CG4DPXFV?ref_=ast_author_dp" target="_blank" title="Purchase Super Kidz">
+<img class="img-SK_HP" src="Homepage_Photos/Super Kidz HP.png" alt="Super Kidz">
+</a>
+
+
+<!--Heaven's Fate HomePage Art-->
+<a href="https://www.amazon.com/Heavens-Fate-1-Chris-Steadman-ebook/dp/B0CJLJ9ZSP?ref_=ast_author_dp" target="_blank" title="Purchase Heaven's Fate">
+<img class="img-HF_HP" src="Homepage_Photos/Heaven's Fate HP.png" alt="Heaven's Fate">
+</a>
+</div>
+
+<!--Rage Homepage Art-->
+<div class="img-row2">
+ <a href="https://www.amazon.com/Rage-1-Chris-Steadman-ebook/dp/B0CJQH7WSV?ref_=ast_author_dp" target="_blank" title="Purchase Rage">
+ <img class="img-Rage_HP" src="Homepage_Photos/Rage HP.png" alt="Rage">
+</a>
+
+<!--Time to Scrap Homepage Art-->
+<a href="https://www.amazon.com/Time-Scrap-Chris-Steadman-ebook/dp/B09R1FDYJ7?ref_=ast_author_dp" target="_blank" title="Purchase Time to Scrap">
+<img class="img-TTS_HP" src="Homepage_Photos/Time to Scrap HP.png" alt="Time to Scrap">
+</a>
+</div>
+
+
+
+    <div class="bottom-text">
+        <h2>Steadman's Mission Statement!</h2>
+        <h3>Our goal is to spread the love of books, reading, and literature by telling
+            new and engading stories that connect to a new generation! Reading is power and 
+            with RECO I plan to plant the seed for a new generation of readers while encouraging them
+            to tell their own stories as well! Join me and be part of the next gen!
+        </h3>
+    </div>
+
+<!--RECO Family Photo Image-->
+    <img class="img-RECOFAM" src="img/RECO Family Photo.png" alt="RECO">
+
+<div class="banner-container">
+    <video class="moving-banner" autoplay muted loop playsinline>
+    <source src="Videos/RECO-Moving-Banner.mp4" type="video/mp4">
+    </video>
+   </div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
+
+
